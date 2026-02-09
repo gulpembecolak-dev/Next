@@ -7,6 +7,9 @@ const nextConfig: NextConfig = {
   basePath: `/${repo}`,
   assetPrefix: `/${repo}/`,
   images: { unoptimized: true },
+  env: {
+    NEXT_PUBLIC_BASE_PATH: `/${repo}`,
+  },
 };
 
 export default nextConfig;
